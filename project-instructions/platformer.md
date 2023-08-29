@@ -86,7 +86,7 @@ This Function call will create a platform with an (x,y) location of `(400, 200)`
 //////////ONLY CHANGE BELOW THIS POINT///////////
 /////////////////////////////////////////////////
 
-createCollectable("steve", 200, 170, 6, 0.7); //your example function call
+createCannon("left", 600, 1000); // cannon on left wall, 600px down, shooting once per second
 
 /////////////////////////////////////////////////
 //////////ONLY CHANGE ABOVE THIS POINT///////////
