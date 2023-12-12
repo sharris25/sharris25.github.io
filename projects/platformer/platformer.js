@@ -57,6 +57,7 @@ $(function () {
     createPlatform(500, 300, 100, 10)
     createPlatform(700, 200, 400, 100)
     
+  
 
     // TODO 2
     // Create collectables
@@ -75,6 +76,7 @@ $(function () {
     // example usage: createCannon(side, position, delay, width, height)
 
     createCannon('left', 400, 1000, 10, 10)
+    createCannon('down', 300, 1000)
   
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
