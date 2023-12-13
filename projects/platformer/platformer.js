@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+     for (let i = 100; i < canvas.width; i += 100) {
+       createPlatform(i, canvas.height, -1, -canvas.height);
+     }
+     for (let i = 100; i < canvas.height; i += 100) {
+       createPlatform(canvas.width, i, -canvas.width, -1);
+     }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -57,8 +57,29 @@ $(function () {
     createPlatform(500, 300, 100, 10)
     createPlatform(700, 200, 400, 100)
     
-  
+    createPlatform(700, 200, 10, 600)
+    createPlatform(1200, 50, 10, 500)
 
+    createPlatform(1000, 200, 10, 200)
+
+    createPlatform(1000, 200, 100, 100)
+
+    createPlatform(1200, 460, 100, 10)
+
+    createPlatform(1100, 400, 100, 10)
+
+    createPlatform(900, 550, 300, 11)
+    
+    createPlatform(900, 200, 10, 200)
+  
+    createPlatform(700, 600, 100, 10)
+
+    createPlatform(600, 500, 100, 10)
+
+    createPlatform(1300, 600, 100, 10)
+
+    createPlatform(1300, 350, 100, 10)
+  
     // TODO 2
     // Create collectables
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
@@ -68,15 +89,19 @@ $(function () {
 
     createCollectable('database', 200, 500, 1, 1)
     createCollectable('database', 750, 150, 1, 1)
-
+    createCollectable('database', 1150, 500, 1, 1)
+    createCollectable('database', 1300, 300, 1, 1)
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
 
-    createCannon('left', 400, 1000, 10, 10)
-    createCannon('down', 300, 1000)
+    createCannon('left', 400, 1000, 30, 10)
+    createCannon('top', 600, 1500, 30, 50)
+    createCannon('bottom', 1350, 15, 30, 50)
+    createCannon('top', 1000, 1500, 30, 30)
+   
   
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
